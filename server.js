@@ -9,7 +9,7 @@ const initializeAdmin = require("./routes/initializeAdmin");
 const app = express();
 const PORT = process.env.PORT || 3000;
 
-app.use(cors({ origin: 'http://localhost:5173' }));
+app.use(cors({ origin: ['http://localhost:5173', 'https://echo-frontend-six.vercel.app'] }));
 app.use(express.json());
 
 mongoose
